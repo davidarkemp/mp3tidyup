@@ -1,0 +1,11 @@
+#!/usr/bin/env python2.7
+import os; activate_this=os.path.join(os.path.dirname(__file__), 'activate_this.py'); execfile(activate_this, dict(__file__=activate_this)); del os, activate_this
+# EASY-INSTALL-ENTRY-SCRIPT: 'stagger==0.4.2','console_scripts','stagger'
+__requires__ = 'stagger==0.4.2'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('stagger==0.4.2', 'console_scripts', 'stagger')()
+    )
